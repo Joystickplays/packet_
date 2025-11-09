@@ -10,4 +10,4 @@ A file-sharing web system inspired by [Snapdrop](https://github.com/SnapDrop/sna
 
 ## Technologies
 - React
-- [PeerJS](peerjs.com)
+- [PeerJS](https://github.com/peers/peerjs)
