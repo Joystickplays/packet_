@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from 'react'
 import Header from './components/HeaderLogo'
 import './App.css'
 import QRCode from 'react-qr-code'
-import { Check, Copy, File, LoaderCircle, RotateCw, Send, Upload } from 'lucide-react'
+import { Check, Copy, File, Github, LoaderCircle, RotateCw, Send, Upload } from 'lucide-react'
 import { AnimatePresence, motion } from 'motion/react'
 import Peer from 'peerjs'
 import { Scanner } from '@yudiel/react-qr-scanner'
@@ -744,7 +744,7 @@ function App() {
                     </div>
                     <div className="flex flex-col">
                       <h1 className="font-mono opacity-50 text-sm">Transfer speed</h1>
-                      <p className="font-mono opacity-80 text-lg">---mbps</p>
+                      <p className="font-mono opacity-80 text-lg">---mbps</p> {/* soon */}
                     </div>
                     {/* <div className="flex flex-col">
                       <h1 className="font-mono opacity-50 text-sm">Possible throughput</h1>
@@ -833,6 +833,11 @@ function App() {
                     </motion.p>
                   )}
                 </AnimatePresence>
+                <motion.div layout className="mt-4 opacity-30 hover:opacity-80 hover:scale-110 transition-all block w-fit">
+                  <a href="https://github.com/Joystickplays/packet_" target="_blank" className="w-fit block">
+                    <Github />
+                  </a>
+                </motion.div>
               </div>
               <AnimatePresence mode="popLayout">
                 {mode === "transmit" && (
