@@ -8,7 +8,7 @@ import Peer from 'peerjs'
 import { Scanner } from '@yudiel/react-qr-scanner'
 import Mode from './components/ModeSwitcher'
 import { toast } from 'sonner'
-import NumberFlow from '@number-flow/react'
+// import NumberFlow from '@number-flow/react'
 import { formatBytes } from './utils/formatSize'
 import Button from './components/Button'
 
