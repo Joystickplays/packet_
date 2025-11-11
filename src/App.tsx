@@ -754,7 +754,7 @@ function App() {
                 </div>
                 <div className="border flex-1 border-white/10 rounded-2xl w-full max-h-80 min-h-full flex flex-col">
                   <div className="flex-1 w-full min-h-40 overflow-y-scroll  h-full flex flex-col-reverse gap-1 p-4">
-                    {chats.reverse().map((chat, idx) => {
+                    {[...chats].reverse().map((chat, idx) => {
                       return (
                         <motion.div
                           layout="position"
@@ -833,7 +833,7 @@ function App() {
                     </motion.p>
                   )}
                 </AnimatePresence>
-                <motion.div layout className="mt-4 opacity-30 hover:opacity-80 hover:scale-110 transition-all block w-fit">
+                <motion.div layout className="mt-4 opacity-30 hover:opacity-80 hover:scale-110 transition-all block w-fit mx-auto md:mx-0">
                   <a href="https://github.com/Joystickplays/packet_" target="_blank" className="w-fit block">
                     <Github />
                   </a>
