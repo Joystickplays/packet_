@@ -763,7 +763,7 @@ function App() {
                           transition={{
                             duration: 0.3,
                             layout: {
-                              type: 'spring', mass: 1, stiffness: 160, damping: 20, delay: (-idx + chats.length) / 50
+                              type: 'spring', mass: 1, stiffness: 160, damping: 20, delay: (idx + chats.length) / 50
                             }
                           }}
                           style={{ order: idx }} className={`opacity-70 whitespace-pre-wrap max-w-full break-normal font-mono ${chat.from === 'peer' ? "text-red-500" : ""} flex justify-between`}>
